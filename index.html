@@ -1,39 +1,70 @@
+<!DOCTYPE html>
+<html>
 
-
-<body class="container">
-
-	<h1 id="header">Список завдань</h1>
-	<div class="mb-3">
-	<input class="form-control" id="input">
-
-	<button class="btn btn-primary" onclick="myfunction()">
-	Додати до списку завдань
-	</button>
-
-	<ul class="list-group" id="todo">
+<head>
+	<meta charset="utf-8">
+	<title>аниме топ!</title>
+		<style>
 		
-	</ul>
-	</div>
-	
+		em{
+			color:red;
+		}
+		label{
+			display: inline-block;
+			width:100px;
+		}
+	</style>
+</head>
+<body>
 
+<form>
+	<fieldset>
+		<legend>контактна інформація</legend>
+		<label>ім'я</label>
+		<input>
+		<br>
+		<br>
+		<label>телефон</label>
+		<input>
+		<br>
+		<label>email</label>
+		<input>
+		<br>
+	</fieldset>
+<fieldset>
+	<legend>персональна інформація</legend>
+	<label>вік<em>*</em></label>
+	<input>
+	<br>
+		<label>стать</label>
+		<select>
+			<option>жінка</option>
+			<option>чоловік</option>
+		</select><br>
+		<label>кщли ви пишите зрозуміли що хоче стати охоронцем зоопарку?</label>
+		<textarea></textarea>
+		</fieldset>
+		<fieldset>
+			<legend>оберітьсобі тварину</legend>
+			<label>зера</label>
+			<input type="checkbox">
+
+				<label>кіт</label>
+				<input type="checkbox">
+					<label>анаконда</label>
+					<input type="checkbox">
+						<label>людина</label>
+						<input type="checkbox">
+							<label>слон</label>
+							<input type="checkbox">
+							<label>гну</label>
+							<input type="checkbox">
+							<label>пінгвін</label>
+							<input type="checkbox">
+							<label>краб</label>
+							<input type="checkbox">
+
+</fieldset>
+</form>
 </body>
-<script>
-function myfunction(){
-	text = document.getElementById("input").value
-	document.getElementById("todo").innerHTML+='<li class="list-group-item">'+text+'</li>'
-	document.getElementById("input").value=""
-}
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html>
